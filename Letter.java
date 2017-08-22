@@ -1,5 +1,7 @@
 package postOffice;
 
+import java.time.LocalDateTime;
+
 public class Letter extends AbsShipments {
 
 	@Override
@@ -18,5 +20,7 @@ public class Letter extends AbsShipments {
 		this.type = "letter";
 		
 	}
+
+	
 
 }

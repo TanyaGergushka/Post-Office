@@ -5,6 +5,14 @@ public class Parcel extends AbsShipments {
 	private boolean isBigSize = true;
 
 	private boolean isBreakable = false;
+	
+	
+//	public Parcel() {
+//	this.setTax();
+//	this.setDate();
+//	
+//	
+//	}
 
 	public boolean isBreakable() {
 		return this.isBreakable;

@@ -1,6 +1,10 @@
 package postOffice;
 
+import java.sql.Time;
+import java.time.Instant;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.Date;
 
 public abstract class AbsShipments {
 
@@ -10,7 +14,8 @@ public abstract class AbsShipments {
 	protected double tax;
 	protected String type;
 	private int minutesToHandOver;
-	private LocalDate date = LocalDate.now();
+	private LocalDateTime date;
+	
 	
 	
 	public Sender getSender() {
@@ -40,6 +45,16 @@ public abstract class AbsShipments {
 		return tax;
 	}
 	public abstract void setTax();
+	public LocalDateTime getDate() {
+		return date;
+	}
+	public void setDate() {
+		this.date = LocalDateTime.now();
+	}
+	
+	
+	
+	
 	
 	
 
